@@ -7,8 +7,10 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  font-family: monospace;
 }
 
 body {
   background-color: #0a192f;
 }
+

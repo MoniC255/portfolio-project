@@ -4,7 +4,10 @@
   color: white;
   justify-content: space-between;
   align-items: center;
-
+    
+    h2 {
+      color: aqua;
+    }
    
 
     .navLinks__myInfo {
@@ -14,7 +17,7 @@
 
     li {
       margin: 20px;
-
+  
     }
 
 
@@ -32,17 +35,18 @@
    h1 {
      color: aqua;
      font-size: 3rem;
+     font-weight: 100;
    }
 
 
    h2 {
-     font-size: 10rem;
-     color: white;
+     font-size: 5rem;
+     color: #ccd6f6;
    }
 
    h3 {
       font-size: 4rem;
-      color: white;
+      color: #8892b0;
    }
 
    h4 {
