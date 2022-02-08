@@ -17,10 +17,6 @@ body {
   background-color: #0a192f;
 }
 
-a {
-  color: white;
-}
-
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,7 +96,6 @@ a {
 
 .introduction .introduction__opening {
   color: aqua;
-  font-size: 3rem;
   font-weight: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,25 +108,22 @@ a {
 
 .introduction .introduction__opening .introduction__span--name {
   color: yellow;
+  font-size: 10rem;
 }
 
-.introduction h2 {
-  font-size: 5rem;
-  color: #ccd6f6;
-}
-
-.introduction h3 {
+.introduction .introduction__opening .introduction__span--tagline {
+  color: #c6c6cf;
   font-size: 4rem;
-  color: #8892b0;
 }
 
-.introduction h4 {
+.introduction .introduction__opening .introduction__span--information {
+  color: #c6c6cf;
   font-size: 2rem;
-  color: white;
+  margin: 10px;
 }
 
 .about {
-  margin: 150px 0;
+  color: yellow;
   height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

@@ -15,10 +15,6 @@ body {
 }
 
 
-a {
-  color: white;
-}
-
 .navbar {
   display: flex;
   flex-direction: row;
@@ -49,6 +45,7 @@ a {
           &--active {
             color: yellow;
           }
+
         }
       }
     }
@@ -90,38 +87,40 @@ a {
     
    .introduction__opening {
      color: aqua;
-     font-size: 3rem;
      font-weight: 100;
      display: flex;
-     flex-direction: column;
+     flex-direction: column; 
+     
+   
 
      .introduction__span {
        &--name {
          color: yellow;
+         font-size: 10rem;
        }
-     }
-   }
+
+       &--tagline {
+         color:  rgb(198, 198, 207);
+         font-size: 4rem;
+       }
+
+       &--information {
+        color: rgb(198, 198, 207);
+        font-size: 2rem;
+        margin: 10px;
+       }
+
+      }
+     
 
 
-   h2 {
-     font-size: 5rem;
-     color: #ccd6f6;
-   }
-
-   h3 {
-     font-size: 4rem;
-     color: #8892b0;
-   }
-
-   h4 {
-     font-size: 2rem;
-     color: white;
-   }
 }
+   
+
+}
+
 
 .about {
-  margin: 150px 0;
+  color: yellow;
   height: 100vh;
 }
-
-  
