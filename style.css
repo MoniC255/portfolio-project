@@ -92,6 +92,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border: 2px solid purple;
+  margin: 10vh;
 }
 
 .introduction .introduction__opening {
@@ -123,7 +124,29 @@ body {
 }
 
 .about {
-  color: yellow;
-  height: 100vh;
+  height: 93vh;
+  margin: 10vh;
+  width: 100vh;
+}
+
+.about .about__title {
+  color: #c6c6cf;
+  font-size: 4rem;
+}
+
+.about .about__description {
+  color: red;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.projects {
+  height: 93vh;
+  margin: 30px;
+}
+
+.projects .projects__title {
+  color: #c6c6cf;
+  font-size: 4rem;
 }
 /*# sourceMappingURL=style.css.map */

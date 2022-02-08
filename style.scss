@@ -83,6 +83,7 @@ body {
   height: 93vh;
   align-items: center;
   border: 2px solid purple;
+  margin: 10vh;
   
     
    .introduction__opening {
@@ -121,6 +122,34 @@ body {
 
 
 .about {
-  color: yellow;
-  height: 100vh;
+  height: 93vh;
+  margin: 10vh;
+  width: 100vh;
+
+
+   .about__title {
+    color:rgb(198, 198, 207);
+    font-size: 4rem;
+   }
+
+
+   .about__description {
+     color: red;
+     font-size: 2rem;
+     margin-top: 10px;
+   }
+
+
 }
+
+.projects {
+  height: 93vh;
+  
+
+      .projects__title {
+        color:rgb(198, 198, 207);
+        font-size: 4rem;
+      }
+}
+
+
