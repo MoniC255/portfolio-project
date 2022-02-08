@@ -49,7 +49,7 @@ a {
           flex-direction: row;
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 768px) {
   .navbar .navbar__links {
     display: none;
   }
@@ -82,12 +82,6 @@ a {
   width: 30px;
   background-color: blue;
   margin: 5px;
-}
-
-@media only screen and (max-width: 768px) {
-  ul {
-    display: none;
-  }
 }
 
 .introduction {
