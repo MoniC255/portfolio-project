@@ -1,3 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  background-color: #0a192f;
+}
+
+a {
+  color: white;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,5 +134,10 @@
 .introduction h4 {
   font-size: 2rem;
   color: white;
+}
+
+.about {
+  margin: 150px 0;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */
