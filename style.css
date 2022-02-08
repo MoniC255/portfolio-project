@@ -76,7 +76,7 @@ body {
 .navbar .hamburger .line {
   height: 3px;
   width: 30px;
-  background-color: blue;
+  background-color: aqua;
   margin: 5px;
 }
 
@@ -127,6 +127,7 @@ body {
   height: 93vh;
   margin: 10vh;
   width: 100vh;
+  border: 3px solid chocolate;
 }
 
 .about .about__title {
@@ -141,11 +142,23 @@ body {
 }
 
 .projects {
-  height: 93vh;
-  margin: 30px;
+  height: 120vh;
+  border: 3px solid cyan;
+  width: 100vh;
 }
 
-.projects .projects__title {
+.projects .projects__mainTitle {
+  color: #c6c6cf;
+  font-size: 4rem;
+}
+
+.contact {
+  height: 100vh;
+  margin-top: 60px;
+  border: 3px solid orange;
+}
+
+.contact .contact__heading {
   color: #c6c6cf;
   font-size: 4rem;
 }
