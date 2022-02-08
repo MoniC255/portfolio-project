@@ -1,4 +1,4 @@
-.navLinks {
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,13 +13,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 7vh;
 }
 
-.navLinks h2 {
-  color: aqua;
-}
-
-.navLinks .navLinks__myInfo {
+.navbar .navbar__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,22 +26,44 @@
           flex-direction: row;
 }
 
-.navLinks li {
+@media screen and (max-width: 786px) {
+  .navbar .navbar__links {
+    display: none;
+  }
+}
+
+.navbar .navbar__links li {
   margin: 20px;
 }
 
+.navbar .navbar__links li .navbar__link {
+  color: #fff;
+}
+
+.navbar .navbar__links li .navbar__link--active {
+  color: yellow;
+}
+
+.navbar .hamburger {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
-  li .container {
-    display: inline-block;
-    cursor: pointer;
+  .navbar .hamburger {
+    display: block;
   }
-  li .bar1, li .bar2, li .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+}
+
+.navbar .hamburger .line {
+  height: 3px;
+  width: 30px;
+  background-color: blue;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  ul {
+    display: none;
   }
 }
 
@@ -55,12 +74,28 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 93vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid purple;
 }
 
-.introduction h1 {
+.introduction .introduction__opening {
   color: aqua;
   font-size: 3rem;
   font-weight: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.introduction .introduction__opening .introduction__span--name {
+  color: yellow;
 }
 
 .introduction h2 {

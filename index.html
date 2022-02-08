@@ -14,18 +14,20 @@
 </body>
 
 <header>
-  <nav class="navLinks">
-    <div>
+  <nav class="navbar">
+
       <h2>My Logo</h2>
-    </div>
-    <div>
-      <ol class="navLinks__myInfo">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#">Technologies</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ol>
-    </div>
+      <ul class="navbar__links">
+        <li><a href="#" class="navbar__link navbar__link--active">About Me</a></li>
+        <li><a href="#" class="navbar__link navbar__link">Technologies</a></li>
+        <li><a href="#" class="navbar__link navbar__link">Projects</a></li>
+        <li><a href="#" class="navbar__link navbar__link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
    
   
 
@@ -38,14 +40,29 @@
 
 
 <main>
-<section>
-<div class="introduction">
-  <div>
-    <h1>Hi, my name is</h1>
-    <h2>Monique Christopher</h2>
-  
-</div>
+<section class="introduction">
+    <h1 class="introduction__opening"><span>Hi, my name is</span>
+      <span class="introduction__span introduction__span--name">Monique Christopher</span>
+      <span class="introduction__span introduction__span--tagline">I create new technical solutions</span> 
+    </h1>
 </section>
+
+
+
+<section class=""about">
+
+<h2 class="about__title">About Me</h2>
+<p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.</p>
+<button class="about__btn">More about me</button>
+
+
+
+
+
+</section>
+
+
+
 
 
 </main>
