@@ -81,7 +81,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 93vh;
+  height: 92vh;
   border: 2px solid purple;
   
     
@@ -151,22 +151,25 @@ body {
 
 
 .projects {
- height: 100vh;
+ 
  margin-top: 50vh;
  zoom: 0.8;
 
 
-       .projects__titleContainer {
-         display: flex;
-         justify-content: center;
-         &--mainTitle {
-          font-size: 4rem;
-          color: rgb(198, 198, 207);
-        
 
-         }
-         
-       }
+        .projects__titleContainer {
+          display: flex;
+          justify-content: center;
+          .projects__header {
+            &--mainTitle {
+              font-size: 4rem;
+              color:rgb(198, 198, 207);
+            }
+          }
+        }
+
+
+       
   
   
        .projects__container {
@@ -178,6 +181,24 @@ body {
          
 
          .projects__projectList {
+           display: grid;
+           grid-template-columns: repeat(2,1fr);
+           border: 3px solid chartreuse;
+           margin-top: 2vh;
+           margin-bottom: 2vh;
+
+           .projects__previewButtons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 1vh;
+            margin: 2vh;
+
+
+           }
+        
+            
+      
+  
          
              h3 {
                font-size: 2.5rem;
@@ -185,10 +206,21 @@ body {
              }
     
              li {
+               list-style-type: disc;
                font-size: 2rem;
                color:rgb(198, 198, 207)
-               
              }
+               
+              .projects__previewButtons {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 1vh;
+                margin: 2vh;
+            
+                
+              }
+
+        
           }
 
 
@@ -208,12 +240,26 @@ body {
  height: 100vh;
  border: 3px solid orange;
  margin-top: 50vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
 
-          .contact__heading {
-            color:rgb(198, 198, 207) ;
-            font-size: 4rem;
-          }
+           .contact__mainheader {
+             font-size: 4rem;
+             color: rgb(198, 198, 207);
+          
+           }
 
+           .contact__subheader {
+             font-size: 2rem;
+             color: rgb(198, 198, 207);
+             
+
+           }
+ 
+
+
+ 
 
 
 }

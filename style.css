@@ -89,7 +89,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 93vh;
+  height: 92vh;
   border: 2px solid purple;
 }
 
@@ -152,7 +152,6 @@ body {
 }
 
 .projects {
-  height: 100vh;
   margin-top: 50vh;
   zoom: 0.8;
 }
@@ -166,7 +165,7 @@ body {
           justify-content: center;
 }
 
-.projects .projects__titleContainer--mainTitle {
+.projects .projects__titleContainer .projects__header--mainTitle {
   font-size: 4rem;
   color: #c6c6cf;
 }
@@ -180,24 +179,70 @@ body {
   justify-items: center;
 }
 
+.projects .projects__container .projects__projectList {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  border: 3px solid chartreuse;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.projects .projects__container .projects__projectList .projects__previewButtons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 1vh;
+          column-gap: 1vh;
+  margin: 2vh;
+}
+
 .projects .projects__container .projects__projectList h3 {
   font-size: 2.5rem;
   color: #c6c6cf;
 }
 
 .projects .projects__container .projects__projectList li {
+  list-style-type: disc;
   font-size: 2rem;
   color: #c6c6cf;
+}
+
+.projects .projects__container .projects__projectList .projects__previewButtons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 1vh;
+          column-gap: 1vh;
+  margin: 2vh;
 }
 
 .contact {
   height: 100vh;
   border: 3px solid orange;
   margin-top: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.contact .contact__heading {
-  color: #c6c6cf;
+.contact .contact__mainheader {
   font-size: 4rem;
+  color: #c6c6cf;
+}
+
+.contact .contact__subheader {
+  font-size: 2rem;
+  color: #c6c6cf;
 }
 /*# sourceMappingURL=style.css.map */
