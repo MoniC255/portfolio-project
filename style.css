@@ -1,5 +1,4 @@
 * {
-  margin: 0;
   padding: 0;
   outline: 0;
   -webkit-appearance: none;
@@ -87,12 +86,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 93vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 93vh;
   border: 2px solid purple;
-  margin: 10vh;
 }
 
 .introduction .introduction__opening {
@@ -124,10 +122,22 @@ body {
 }
 
 .about {
-  height: 93vh;
-  margin: 10vh;
-  width: 100vh;
+  width: 100%;
   border: 3px solid chocolate;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about .about__title {
@@ -142,20 +152,48 @@ body {
 }
 
 .projects {
-  height: 120vh;
-  border: 3px solid cyan;
-  width: 100vh;
+  height: 100vh;
+  margin-top: 50vh;
+  zoom: 0.8;
 }
 
-.projects .projects__mainTitle {
-  color: #c6c6cf;
+.projects .projects__titleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects .projects__titleContainer--mainTitle {
   font-size: 4rem;
+  color: #c6c6cf;
+}
+
+.projects .projects__container {
+  border: 3px solid blue;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.projects .projects__container .projects__projectList h3 {
+  font-size: 2.5rem;
+  color: #c6c6cf;
+}
+
+.projects .projects__container .projects__projectList li {
+  font-size: 2rem;
+  color: #c6c6cf;
 }
 
 .contact {
   height: 100vh;
-  margin-top: 60px;
   border: 3px solid orange;
+  margin-top: 50vh;
 }
 
 .contact .contact__heading {
