@@ -1,13 +1,19 @@
 * {
   padding: 0;
   outline: 0;
-  appearance: none;
   border: 0;
-  text-decoration: none;
   list-style: none;
   box-sizing: border-box;
   font-family: monospace;
+  text-decoration: none;
+   
 }
+
+
+
+
+
+
 
 body {
   background-color: #0a192f;
@@ -22,39 +28,31 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 7vh;
+  width: 100vw;
     
-    //  {
-    //   color: aqua;
-    // }
+   
    
 
     .navbar__links {
       display: flex;
       flex-direction: row;
+      
      
 
       @media screen and (max-width: 768px) {
         display: none;
       }
 
-      li {
+        a {
         margin: 20px;
-        
-      
+        color:  rgb(198, 198, 207);
+        }
 
-          &--active {
-            color: yellow;
-          } 
-
-          a {
-            color:  rgb(198, 198, 207);
-          }
-      
-        
-
-        
-      }
+        a:hover {
+          color: aqua;
+        }
     }
+
 
     .hamburger {
       display: none;
@@ -89,6 +87,13 @@ body {
   align-items: center;
   height: 92vh;
   border: 2px solid purple;
+  width: 350px;
+
+  @media screen and (min-width: 1024px) {
+    width: 90vw;
+   }
+    
+  
   
     
    .introduction__opening {
@@ -97,64 +102,89 @@ body {
      display: flex;
      flex-direction: column;
       
+     @media screen and (min-width: 1024px) {
+       font-size: 4rem;
+      }
      
    
 
      .introduction__span {
        &--name {
          color: yellow;
-         font-size: 10rem;
        }
 
        &--tagline {
          color:  rgb(198, 198, 207);
-         font-size: 4rem;
        }
 
        &--information {
         color: rgb(198, 198, 207);
-        font-size: 2rem;
         margin: 10px;
        }
 
       }
      
-
+    }
 
 }
    
 
-}
 
 
-.about {
-  width: 100%;
-  border: 3px solid chocolate;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.aboutMe {
   
- 
+  margin-top: 10vh;
+
+  @media screen and (min-width:1024px) {
+    display: flex;
+    
+  }
+  
+      #myPic > img {
+        width: 340px;
+        height: 50vh;
+        
+        }
 
 
-   .about__title {
-    color:rgb(198, 198, 207);
-    font-size: 4rem;
-   }
-
-
-   .about__container {
-
-    .about__paragraph {
-      &--description {
-        color: red;
-        font-size: 2rem;
-        margin-top: 10px;
+  
+     .aboutMe__container {
+       border: 2px solid orange;
+       width: 340px;
+       @media screen and (min-width:1024px) {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 40vw;
       }
-    }
-   }
+       
+        
 
+         h2 {
+            color:rgb(198, 198, 207);
+                @media screen and (min-width:1024px) {
+                  font-size: 4rem;
+                }
+            }
+
+          p {
+            color:rgb(198, 198, 207);
+                @media screen and (min-width:1024px) {
+                 font-size: 1.5rem;
+                }
+            }
+
+       img {
+          width: 335px;
+       }
+
+
+        
+
+      }
+
+    
 
    
 
@@ -165,114 +195,62 @@ body {
 
 
 .projects {
- 
- margin-top: 50vh;
- zoom: 0.8;
-
-
-
-        .projects__titleContainer {
+        .projects__container {
           display: flex;
-          justify-content: center;
-          .projects__header {
-            &--mainTitle {
-              font-size: 4rem;
-              color:rgb(198, 198, 207);
-            }
-          }
-        }
-
-
-       
-  
-  
-       .projects__container {
-         border: 3px solid blue;
-         display: grid;
-         grid-template-columns: repeat(2,1fr);
-         justify-items: center;
-      
-         
-
-         .projects__projectList {
+          flex-wrap: wrap; 
+          @media screen and (min-width:1024px) {
            display: grid;
            grid-template-columns: repeat(2,1fr);
-           border: 3px solid chartreuse;
-           margin-top: 2vh;
-           margin-bottom: 2vh;
-           box-sizing: content-box;
-           width: 120vh;
-           height: 150vh;
-
-
-            .projects__div {
-              &--one {
-                display: flex;
-                flex-direction: column;
-              }
-
-              &--two {
-                display: flex;
-                flex-direction: column;
-              }
-
-              &--three {
-                display: flex;
-                flex-direction: column;
-              }
-
-              &--four {
-                display: flex;
-                flex-direction: column;
-               
-               
-              }
-            }
-
-
+           gap: 10vh;
            
-           
-        
-           .projects__previewButtons {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 1vh;
-            margin: 2vh;
-
-            }
-        
-            
-      
-  
-         
-             h3 {
-               font-size: 2.5rem;
-               color: rgb(198, 198, 207);
-             }
-    
-             li {
-               list-style-type: disc;
-               font-size: 2rem;
-               color:rgb(198, 198, 207)
-             }
-               
-              .projects__previewButtons {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                column-gap: 1vh;
-                margin: 2vh;
-            
-                
-              }
-
-        
           }
 
 
          
+            .card {
+              border: 3px solid blue;
+              grid-template-columns: repeat(2);
+              background-color: red;
+              width: 76.5vh;
+
+              @media screen and (min-width: 1024px) {
+                display: flex;
+
+              }
+                
+              
+
+           
+              
+            
+               h3 {
+                color: aqua;
+                  }
+        
+               .projects__previewButtons {
+                 display: grid;
+                 grid-template-columns: 1fr 1fr;
+                 column-gap: 1vh;
+                 margin: 2vh;
+                }
+      
+    
+                li {
+                   color:rgb(198, 198, 207)
+                   }  
+
+                   
+        
+              
+
+        
+            }
+
 
          
-       }
+        }
+         
+        
   
 
 }
@@ -282,29 +260,42 @@ body {
 
 
 .contact {
- height: 100vh;
+ height: 95vh;
  border: 3px solid orange;
- margin-top: 50vh;
  display: flex;
  flex-direction: column;
  align-items: center;
+ margin-top: 7vh;
+ width: 340px;
+ 
+ @media screen and (min-width: 1024px) {
+  border: 3px solid aqua;
+  width: 180vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
            .contact__mainheader {
-             font-size: 4rem;
              color: rgb(198, 198, 207);
-          
+
+             @media screen and (min-width: 1024px) {
+               font-size: 4rem;
+             }
+
+             
+        
            }
 
            .contact__subheader {
-             font-size: 2rem;
              color: rgb(198, 198, 207);
+
+             @media screen and (min-width: 1024px) {
+              font-size: 1.5rem;
+            }
              
            }
 
-           .contact__form {
-             color: purple;
-
-           }
-          
+            
 
 }
+

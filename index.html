@@ -15,12 +15,15 @@
   <nav class="navbar">
 
       <h2>My Logo</h2>
-      <ul class="navbar__links">
-        <li><a href="#aboutMe" class="navbar__link navbar__link--active">About Me</a></li>
-        <li><a href="#" class="navbar__link navbar__link">Technologies</a></li>
-        <li><a href="#myProjects" class="navbar__link navbar__link">Projects</a></li>
-        <li><a href="#contactDetails" class="navbar__link navbar__link">Contact</a></li>
-      </ul>
+
+      <div class="navbar__links">
+        <ul></ul>
+        <a href="#aboutMeSection" class="navbar__link navbar__link--active">About Me</a>
+        <a href="#" class="navbar__link navbar__link">Technologies</a>
+        <a href="#myProjects" class="navbar__link navbar__link">Projects</a>
+        <a href="#contactDetails" class="navbar__link navbar__link">Contact</a>
+      </div> 
+      
       <div class="hamburger">
         <div class="line"></div>
         <div class="line"></div>
@@ -42,20 +45,21 @@
     <h1 class="introduction__opening"><span>Hi, my name is</span>
       <span class="introduction__span introduction__span--name">Monique Christopher</span>
       <span class="introduction__span introduction__span--tagline">I create new technical solutions</span> 
-      <span class="introduction__span introduction__span--information">I'm a Software Developer Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptates quisquam dolorem maiores nisi laboriosam cumque nemo suscipit aliquid eum architecto, nulla, officiis porro eos nam, odio repudiandae deleniti? Exercitationem!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptates quisquam dolorem maiores nisi laboriosam cumque nemo suscipit aliquid eum architecto, nulla, officiis porro eos nam, odio repudiandae deleniti? Exercitationem!</span>
     </h1>
 </section>
 
 
 
-<section class="about" id="aboutMe">
+<section class="aboutMe" id="aboutMeSection">
+  <div id="myPic">
+    <img src="lonely-japanese-cherry.jpg" alt="Pictire of a Japanese Sakura Cherry Tree">
+  </div>
 
-<h2 class="about__title">About Me</h2>
+  <div class="aboutMe__container">
+    <h2>About Me</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
 
-<div class="about__container">
-<p class="about__paragraph about__paragraph--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae</p>
-
-</div>
 
 </section>
 
@@ -63,187 +67,168 @@
 
 <section class="projects" id="myProjects">
 
-  <div class="projects__titleContainer">
+  <h2 class="projects__header">Projects</h2>
 
-  <h2 class="projects__header projects__header--mainTitle">Projects</h2>
-
-  </div>
-
-
+  
   <div class="projects__container">
 
-    <div class="projects__projectList">
+    <div class="card">
+      <h3>Project 1</h3>
+      <img src="github.png" alt="A screenshot of my fourth project">
+      <div class="projects__previewButtons">
+        <button>Github Repo</button>
+        <button>Live Preview</button>
+      </div>
+      <p>Technologies Used:</p>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Javascript</li>
+        <li>ReactJS</li>
+        <li>NodeJS</li>
+        <li>ExpressJS</li>
+      </ul>  
+      <div class="card__info">
+         <p>Aim of project: </p>
+        <ul>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+        </ul>
+         <p>Diffulculties I faced: </p>
+        <ul>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+        </ul>
+         <p>Solutions: </p>
+        <ul>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+        </ul>   
+      </div>
 
-      <div class="projects__div projects__div--one">
+    </div>
 
-        <h3>Project 1</h3>
-        <img src="github.png" alt="A screenshot of my fourth project">
+    <div class="card">
+      <h3>Project 2</h3>
+      <img src="github.png" alt="A screenshot of my fourth project">
+      <div class="projects__previewButtons">
+        <button>Github Repo</button>
+        <button>Live Preview</button>
+      </div>
+      <h4>Technologies Used:</h4>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Javascript</li>
+        <li>ReactJS</li>
+        <li>NodeJS</li>
+        <li>ExpressJS</li>
+      </ul>  
+      <div class="card__info">
+         <p>Aim of project: </p>
+        <ul>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+        </ul>
+         <p>Diffulculties I faced: </p>
+        <ul>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+        </ul>
+         <p>Solutions: </p>
+        <ul>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+        </ul>   
+      </div>
 
-        <div class="projects__previewButtons">
-          <button>Github Repo</button>
-          <button>Live Preview</button>
-        </div>
+    </div>
+    <div class="card">
+      <h3>Project 3</h3>
+      <img src="github.png" alt="A screenshot of my fourth project">
+      <div class="projects__previewButtons">
+        <button>Github Repo</button>
+        <button>Live Preview</button>
+      </div>
+      <h4>Technologies Used:</h4>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Javascript</li>
+        <li>ReactJS</li>
+        <li>NodeJS</li>
+        <li>ExpressJS</li>
+      </ul>  
+      <div class="card__info">
+         <p>Aim of project: </p>
+        <ul>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+        </ul>
+         <p>Diffulculties I faced: </p>
+        <ul>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+        </ul>
+         <p>Solutions: </p>
+        <ul>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+        </ul>   
+      </div>
+
+    </div>
+    <div class="card">
+      <h3>Project 4</h3>
+      <img src="github.png" alt="A screenshot of my fourth project">
+      <div class="projects__previewButtons">
+        <button>Github Repo</button>
+        <button>Live Preview</button>
+      </div>
+      <h4>Technologies Used:</h4>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Javascript</li>
+        <li>ReactJS</li>
+        <li>NodeJS</li>
+        <li>ExpressJS</li>
+      </ul>  
+      <div class="card__info">
+         <p>Aim of project: </p>
+        <ul>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+        </ul>
+         <p>Diffulculties I faced: </p>
+        <ul>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+        </ul>
+         <p>Solutions: </p>
+        <ul>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+        </ul>   
+      </div>
+
+    </div>
+
+
+
     
-        <h3>Technologies Used:
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Javascript</li>
-          <li>ReactJS</li>
-          <li>NodeJS</li>
-          <li>ExpressJS</li>
-        </h3>
-      </div>
-
-      <div class="projects__div projects__div--info">
-        <h3>Aim of Project:
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </h3>
-
-        <h3>Diffulculties I faced:
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </h3>
-
-        <h3> Solutions:
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </h3>
-          
-      </div>
-
-    </div>
-
-
-
-    <div class="projects__projectList">
-
-      <div class="projects__div projects__div--two">
-        <h3>Project 2</h3>
-        <img src="github.png" alt="A screenshot of my fourth project">
-      
-        <div class="projects__previewButtons">
-          <button>Github Repo</button>
-          <button>Live Preview</button>
-        </div>
-
-        <h3>Technologies Used:
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Javascript</li>
-          <li>ReactJS</li>
-          <li>NodeJS</li>
-          <li>ExpressJS</li>
-        </h3>
-      </div>
-
-      <div class="projects__div projects__div--info">
-        <h3>Aim of Project:
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </h3>
-        <h3>Diffulculties I faced:
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </h3>
-        <h3>Solutions:
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </h3>
-
-      </div>
-
-    </div>
-
-
-
-    <div class="projects__projectList">
-
-      <div class="projects__div projects__div--three">
-        <h3>Project 3</h3>
-        <img src="github.png" alt="A screenshot of my fourth project">
-
-        <div class="projects__previewButtons">
-          <button>Github Repo</button>
-          <button>Live Preview</button>
-        </div>
-
-        <h3>Technologies Used: 
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Javascript</li>
-          <li>ReactJS</li>
-          <li>NodeJS</li>
-          <li>ExpressJS</li>
-        </h3>
-      </div>
-
-      <div class="projects__div projects__div--info">
-        <h3>Aim of Project:
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </h3>
-        <h3>Diffulculties I faced:
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </h3>
-        <h3>Solutions:
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </h3>
-
-      </div>
-
-    </div>
-
-    <div class="projects__projectList">
-
-      <div class="projects__div projects__div--four">
-        <h3>Project 4</h3>
-        <img src="github.png" alt="A screenshot of my fourth project">
-
-        <div class="projects__previewButtons">
-          <button>Github Repo</button>
-          <button>Live Preview</button>
-        </div>
-
-        <h3>Technologies Used:
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Javascript</li>
-          <li>ReactJS</li>
-          <li>NodeJS</li>
-          <li>ExpressJS</li>
-        </h3>
-      </div>
-
-      <div class="projects__div projects__div--info">
-        <h3>Aim of Project:
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </h3>
-        <h3>Diffulculties I faced:
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </h3>
-        <h3>Solutions:
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </h3>
-     </div>
-
   </div>
 
 </section>
@@ -256,26 +241,7 @@
 
     <h4 class="contact__subheader">Want to get in touch? </h4>
 
-    <form action="#" class="contact__form">
-      <fieldset>
-        <legend>Contact Details: </legend>
-
-        <label for="name">Name: </label>
-        <input type="text" id="name">
-
-        <label for="email">Email: </label>
-        <input type="email" id="email">
-
-        <label for="phonenumber">Contact Number: </label>
-        <input type="text" id="phonenumber">
-
-
-        <h4>Want to leave me a message?</h4>
-        <textarea name="message" id="" cols="30" rows="10"></textarea>
-
-      </fieldset>
-
-    </form>
+    
   
 
 
