@@ -54,12 +54,12 @@ body {
   margin: 20px;
 }
 
-.navbar .navbar__links li .navbar__link {
-  color: #fff;
+.navbar .navbar__links li--active {
+  color: yellow;
 }
 
-.navbar .navbar__links li .navbar__link--active {
-  color: yellow;
+.navbar .navbar__links li a {
+  color: #c6c6cf;
 }
 
 .navbar .hamburger {
@@ -132,9 +132,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -145,7 +142,7 @@ body {
   font-size: 4rem;
 }
 
-.about .about__description {
+.about .about__container .about__paragraph--description {
   color: red;
   font-size: 2rem;
   margin-top: 10px;
@@ -187,6 +184,50 @@ body {
   border: 3px solid chartreuse;
   margin-top: 2vh;
   margin-bottom: 2vh;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 120vh;
+  height: 150vh;
+}
+
+.projects .projects__container .projects__projectList .projects__div--one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects .projects__container .projects__projectList .projects__div--two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects .projects__container .projects__projectList .projects__div--three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects .projects__container .projects__projectList .projects__div--four {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .projects .projects__container .projects__projectList .projects__previewButtons {
@@ -244,5 +285,9 @@ body {
 .contact .contact__subheader {
   font-size: 2rem;
   color: #c6c6cf;
+}
+
+.contact .contact__form {
+  color: purple;
 }
 /*# sourceMappingURL=style.css.map */

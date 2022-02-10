@@ -31,6 +31,7 @@ body {
     .navbar__links {
       display: flex;
       flex-direction: row;
+     
 
       @media screen and (max-width: 768px) {
         display: none;
@@ -38,15 +39,20 @@ body {
 
       li {
         margin: 20px;
-
-        .navbar__link {
-          color: #fff;
+        
+      
 
           &--active {
             color: yellow;
-          }
+          } 
 
-        }
+          a {
+            color:  rgb(198, 198, 207);
+          }
+      
+        
+
+        
       }
     }
 
@@ -127,9 +133,9 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-
+  
+ 
 
 
    .about__title {
@@ -138,11 +144,19 @@ body {
    }
 
 
-   .about__description {
-     color: red;
-     font-size: 2rem;
-     margin-top: 10px;
+   .about__container {
+
+    .about__paragraph {
+      &--description {
+        color: red;
+        font-size: 2rem;
+        margin-top: 10px;
+      }
+    }
    }
+
+
+   
 
 
 }
@@ -186,15 +200,46 @@ body {
            border: 3px solid chartreuse;
            margin-top: 2vh;
            margin-bottom: 2vh;
+           box-sizing: content-box;
+           width: 120vh;
+           height: 150vh;
 
+
+            .projects__div {
+              &--one {
+                display: flex;
+                flex-direction: column;
+              }
+
+              &--two {
+                display: flex;
+                flex-direction: column;
+              }
+
+              &--three {
+                display: flex;
+                flex-direction: column;
+              }
+
+              &--four {
+                display: flex;
+                flex-direction: column;
+               
+               
+              }
+            }
+
+
+           
+           
+        
            .projects__previewButtons {
             display: grid;
             grid-template-columns: 1fr 1fr;
             column-gap: 1vh;
             margin: 2vh;
 
-
-           }
+            }
         
             
       
@@ -229,8 +274,8 @@ body {
          
        }
   
-}
 
+}
 
 
 
@@ -254,14 +299,12 @@ body {
              font-size: 2rem;
              color: rgb(198, 198, 207);
              
+           }
+
+           .contact__form {
+             color: purple;
 
            }
- 
-
-
- 
-
+          
 
 }
-
-  
