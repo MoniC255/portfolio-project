@@ -1,0 +1,1 @@
+Hi, I'm Monique and this is my portfolio project. I have utilised the skills I have learnt in HTML and CSS (compiled from scss) to create my portfolio. Included in the structure of my portfolio project are flexbox and grid. From building my project, I have learnt more about the usefulness of them, and hope to develop my overall understanding of CSS.
