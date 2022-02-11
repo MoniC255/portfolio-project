@@ -85,7 +85,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 92vh;
-  border: 2px solid purple;
   width: 350px;
 }
 
@@ -170,7 +169,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid orange;
   width: 360px;
 }
 
@@ -232,8 +230,8 @@ body {
 }
 
 .projects .projects__container .card {
-  border: 3px solid blue;
   width: 76.5vh;
+  border: 1px solid white;
 }
 
 @media screen and (min-width: 1024px) {
