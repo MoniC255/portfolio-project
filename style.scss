@@ -28,7 +28,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 7vh;
-  width: 100vw;
+  width: 98vw;
     
    
    
@@ -90,7 +90,7 @@ body {
   width: 350px;
 
   @media screen and (min-width: 1024px) {
-    width: 90vw;
+    width: 70vw;
    }
     
   
@@ -134,28 +134,46 @@ body {
 
 .aboutMe {
   
+  
   margin-top: 10vh;
+
 
   @media screen and (min-width:1024px) {
     display: flex;
+    flex-direction: row-reverse;
+    margin-top: 60vh;
+    margin-bottom: 30vh;
+    justify-content: center;
+  
+  
     
   }
   
-      #myPic > img {
+       
+        
+       #myPic > img {
         width: 340px;
         height: 50vh;
+
+        @media screen and (min-width: 1024px) {
+          width: 40vw;
+          height: 60vh;
+        }
         
         }
 
 
   
      .aboutMe__container {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
        border: 2px solid orange;
-       width: 340px;
+       width: 360px;
        @media screen and (min-width:1024px) {
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: 60vh;
         width: 40vw;
       }
        
@@ -175,9 +193,7 @@ body {
                 }
             }
 
-       img {
-          width: 335px;
-       }
+
 
 
         
@@ -199,22 +215,26 @@ body {
           display: flex;
           flex-wrap: wrap; 
           @media screen and (min-width:1024px) {
-           display: grid;
+           display: flex;
+           justify-content: center;
            grid-template-columns: repeat(2,1fr);
            gap: 10vh;
+           margin-top: 30vh;
+           
            
           }
 
 
          
             .card {
-              border: 3px solid blue;
-              grid-template-columns: repeat(2);
-              background-color: red;
+              border: 3px solid blue; 
               width: 76.5vh;
 
               @media screen and (min-width: 1024px) {
-                display: flex;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+
+                
 
               }
                 
@@ -224,8 +244,9 @@ body {
               
             
                h3 {
-                color: aqua;
+                color:rgb(198, 198, 207);
                   }
+
         
                .projects__previewButtons {
                  display: grid;
@@ -235,7 +256,7 @@ body {
                 }
       
     
-                li {
+                h4, p, li {
                    color:rgb(198, 198, 207)
                    }  
 
@@ -259,43 +280,5 @@ body {
 
 
 
-.contact {
- height: 95vh;
- border: 3px solid orange;
- display: flex;
- flex-direction: column;
- align-items: center;
- margin-top: 7vh;
- width: 340px;
- 
- @media screen and (min-width: 1024px) {
-  border: 3px solid aqua;
-  width: 180vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
 
-           .contact__mainheader {
-             color: rgb(198, 198, 207);
-
-             @media screen and (min-width: 1024px) {
-               font-size: 4rem;
-             }
-
-             
-        
-           }
-
-           .contact__subheader {
-             color: rgb(198, 198, 207);
-
-             @media screen and (min-width: 1024px) {
-              font-size: 1.5rem;
-            }
-             
-           }
-
-            
-
-}
 
