@@ -85,7 +85,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 92vh;
+  height: 70vh;
   width: 350px;
 
   @media screen and (min-width: 1024px) {
@@ -140,6 +140,7 @@ body {
   @media screen and (min-width:1024px) {
     display: flex;
     flex-direction: row-reverse;
+    column-gap: 10vh;
     margin-top: 60vh;
     margin-bottom: 30vh;
     justify-content: center;

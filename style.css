@@ -84,7 +84,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 92vh;
+  height: 70vh;
   width: 350px;
 }
 
@@ -138,6 +138,8 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    -webkit-column-gap: 10vh;
+            column-gap: 10vh;
     margin-top: 60vh;
     margin-bottom: 30vh;
     -webkit-box-pack: center;
