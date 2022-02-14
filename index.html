@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  
 
   <title>Document</title>
   <!-- <link rel="stylesheet" href="about.html"> -->
@@ -14,11 +16,11 @@
 <header>
   <nav class="navbar">
 
-      <h2>My Logo</h2>
+      <h2 id="logo">My Logo</h2>
+
 
       <div class="navbar__links">
-        <ul></ul>
-        <a href="#aboutMeSection" class="navbar__link navbar__link--active">About Me</a>
+        <a href="#aboutMeSection" class="navbar__link navbar__link--active" id="aboutme">About Me</a>
         <a href="#" class="navbar__link navbar__link">Technologies</a>
         <a href="#myProjects" class="navbar__link navbar__link">Projects</a>
         <a href="#contactDetails" class="navbar__link navbar__link">Contact</a>
@@ -42,9 +44,11 @@
 <main class="maincontent">
 
 <section class="introduction">
+   
+
     <h1 class="introduction__opening"><span>Hi, my name is</span>
       <span class="introduction__span introduction__span--name">Monique Christopher</span>
-      <span class="introduction__span introduction__span--tagline">I create new technical solutions</span> 
+      <span class="introduction__span introduction__span--tagline" id="tagline">I create new technical solutions</span> 
     </h1>
 </section>
 
@@ -118,7 +122,7 @@
         <button>Github Repo</button>
         <button>Live Preview</button>
       </div>
-      <h4>Technologies Used:</h4>
+      <p>Technologies Used:</p>
       <ul>
         <li>HTML5</li>
         <li>CSS3</li>
@@ -156,7 +160,7 @@
         <button>Github Repo</button>
         <button>Live Preview</button>
       </div>
-      <h4>Technologies Used:</h4>
+      <p>Technologies Used:</p>
       <ul>
         <li>HTML5</li>
         <li>CSS3</li>
@@ -194,7 +198,7 @@
         <button>Github Repo</button>
         <button>Live Preview</button>
       </div>
-      <h4>Technologies Used:</h4>
+      <p>Technologies Used:</p>
       <ul>
         <li>HTML5</li>
         <li>CSS3</li>
@@ -205,7 +209,7 @@
       </ul>  
       <div class="card__info">
          <p>Aim of project: </p>
-        <ul>
+        <ul> 
           <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
           <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
           <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
@@ -235,60 +239,7 @@
 
 
 
-
-
-
 </main>
-
-
-
-
-
-
-
-<footer>
-  <div>
-    <ul>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-
-    </ul>
-  </div>
-
-
-
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </body>

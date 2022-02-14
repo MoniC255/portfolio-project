@@ -30,6 +30,7 @@ body {
           align-items: center;
   height: 7vh;
   width: 98vw;
+  position: fixed;
 }
 
 .navbar .navbar__links {
@@ -40,6 +41,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 @media screen and (max-width: 768px) {
@@ -240,13 +243,20 @@ body {
   .projects .projects__container .card {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (2fr)[2];
+        grid-template-columns: repeat(2, 2fr);
   }
 }
 
 .projects .projects__container .card h3 {
   color: #c6c6cf;
+  text-align: center;
+}
+
+.projects .projects__container .card img {
+  position: relative;
+  right: 300px;
+  top: 40px;
 }
 
 .projects .projects__container .card .projects__previewButtons {
@@ -257,9 +267,17 @@ body {
   -webkit-column-gap: 1vh;
           column-gap: 1vh;
   margin: 2vh;
+  position: relative;
+  top: 30px;
 }
 
 .projects .projects__container .card h4, .projects .projects__container .card p, .projects .projects__container .card li {
   color: #c6c6cf;
+  text-align: center;
+}
+
+.projects .projects__container .card .card__info {
+  -webkit-transform: translateY(-67%);
+          transform: translateY(-67%);
 }
 /*# sourceMappingURL=style.css.map */
