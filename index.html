@@ -5,18 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   
 
   <title>Document</title>
-  <!-- <link rel="stylesheet" href="about.html"> -->
+  
 </head>
 <body>
   
 <header>
   <nav class="navbar">
 
-      <h2 id="logo">My Logo</h2>
+      <a href="#introPage" id="myLogo">My Logo </a>
+
+      <div class="switch">
+        <div class="flicker"></div>
+      </div>
 
 
       <div class="navbar__links">
@@ -43,13 +47,14 @@
 
 <main class="maincontent">
 
-<section class="introduction">
+<section class="introduction" id="introPage">
    
 
     <h1 class="introduction__opening"><span>Hi, my name is</span>
       <span class="introduction__span introduction__span--name">Monique Christopher</span>
-      <span class="introduction__span introduction__span--tagline" id="tagline">I create new technical solutions</span> 
+      <span class="introduction__span introduction__span--tagline" id="tagline-typer">I create new technical solutions.</span> 
     </h1>
+
 </section>
 
 
@@ -77,162 +82,190 @@
   <div class="projects__container">
 
     <div class="card">
-      <h3>Project 1</h3>
-      <img src="github.png" alt="A screenshot of my fourth project">
-      <div class="projects__previewButtons">
+      <div class="project__leftside">
+        <h3>Project 1</h3>
+        <img src="github.png" alt="A screenshot of my fourth project">
+        
+        <div class="projects__previewButtons">
         <button>Github Repo</button>
         <button>Live Preview</button>
-      </div>
-      <p>Technologies Used:</p>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Javascript</li>
-        <li>ReactJS</li>
-        <li>NodeJS</li>
-        <li>ExpressJS</li>
-      </ul>  
-      <div class="card__info">
-         <p>Aim of project: </p>
+        </div>
+     
+
+        <h4>Technologies Used:</h4>
         <ul>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Javascript</li>
+          <li>ReactJS</li>
+          <li>NodeJS</li>
+          <li>ExpressJS</li>
         </ul>
-         <p>Diffulculties I faced: </p>
-        <ul>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </ul>
-         <p>Solutions: </p>
-        <ul>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </ul>   
+
       </div>
 
-    </div>
-
-    <div class="card">
-      <h3>Project 2</h3>
-      <img src="github.png" alt="A screenshot of my fourth project">
-      <div class="projects__previewButtons">
-        <button>Github Repo</button>
-        <button>Live Preview</button>
-      </div>
-      <p>Technologies Used:</p>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Javascript</li>
-        <li>ReactJS</li>
-        <li>NodeJS</li>
-        <li>ExpressJS</li>
-      </ul>  
       <div class="card__info">
-         <p>Aim of project: </p>
-        <ul>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </ul>
-         <p>Diffulculties I faced: </p>
-        <ul>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </ul>
-         <p>Solutions: </p>
-        <ul>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </ul>   
+         <h4> Aim of project: </h4>
+         <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, tenetur placeat odit porro aperiam, quod sint voluptatibus molestias fugit alias quia cumque debitis consequatur. Facere neque quam repellat vero commodi!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odit sint sapiente dignissimos nesciunt minima saepe doloremque iure voluptatibus dolore sit corrupti iste, facere rem aut ducimus deleniti eveniet voluptas.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam distinctio earum maiores autem, voluptate eligendi magnam dignissimos ex beatae cumque hic fugit eveniet, consequatur, animi quisquam vel magni necessitatibus.</li>
+         </ul>
+         <h4> Diffulculties I faced: </h4>
+         <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, tenetur placeat odit porro aperiam, quod sint voluptatibus molestias fugit alias quia cumque debitis consequatur. Facere neque quam repellat vero commodi!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odit sint sapiente dignissimos nesciunt minima saepe doloremque iure voluptatibus dolore sit corrupti iste, facere rem aut ducimus deleniti eveniet voluptas.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam distinctio earum maiores autem, voluptate eligendi magnam dignissimos ex beatae cumque hic fugit eveniet, consequatur, animi quisquam vel magni necessitatibus.</li>
+         </ul>
+         <h4> Solution: </h4>
+         <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, tenetur placeat odit porro aperiam, quod sint voluptatibus molestias fugit alias quia cumque debitis consequatur. Facere neque quam repellat vero commodi!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odit sint sapiente dignissimos nesciunt minima saepe doloremque iure voluptatibus dolore sit corrupti iste, facere rem aut ducimus deleniti eveniet voluptas.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam distinctio earum maiores autem, voluptate eligendi magnam dignissimos ex beatae cumque hic fugit eveniet, consequatur, animi quisquam vel magni necessitatibus.</li>
+         </ul>
+          
       </div>
 
     </div>
     <div class="card">
-      <h3>Project 3</h3>
-      <img src="github.png" alt="A screenshot of my fourth project">
-      <div class="projects__previewButtons">
+      <div class="project__leftside">
+        <h3>Project 1</h3>
+        <img src="github.png" alt="A screenshot of my fourth project">
+        
+        <div class="projects__previewButtons">
         <button>Github Repo</button>
         <button>Live Preview</button>
+        </div>
+     
+
+        <h4>Technologies Used:</h4>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Javascript</li>
+          <li>ReactJS</li>
+          <li>NodeJS</li>
+          <li>ExpressJS</li>
+        </ul>
+
       </div>
-      <p>Technologies Used:</p>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Javascript</li>
-        <li>ReactJS</li>
-        <li>NodeJS</li>
-        <li>ExpressJS</li>
-      </ul>  
+
       <div class="card__info">
-         <p>Aim of project: </p>
-        <ul>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </ul>
-         <p>Diffulculties I faced: </p>
-        <ul>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </ul>
-         <p>Solutions: </p>
-        <ul>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </ul>   
+         <h4> Aim of project: </h4>
+         <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, tenetur placeat odit porro aperiam, quod sint voluptatibus molestias fugit alias quia cumque debitis consequatur. Facere neque quam repellat vero commodi!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odit sint sapiente dignissimos nesciunt minima saepe doloremque iure voluptatibus dolore sit corrupti iste, facere rem aut ducimus deleniti eveniet voluptas.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam distinctio earum maiores autem, voluptate eligendi magnam dignissimos ex beatae cumque hic fugit eveniet, consequatur, animi quisquam vel magni necessitatibus.</li>
+         </ul>
+         <h4> Diffulculties I faced: </h4>
+         <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, tenetur placeat odit porro aperiam, quod sint voluptatibus molestias fugit alias quia cumque debitis consequatur. Facere neque quam repellat vero commodi!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odit sint sapiente dignissimos nesciunt minima saepe doloremque iure voluptatibus dolore sit corrupti iste, facere rem aut ducimus deleniti eveniet voluptas.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam distinctio earum maiores autem, voluptate eligendi magnam dignissimos ex beatae cumque hic fugit eveniet, consequatur, animi quisquam vel magni necessitatibus.</li>
+         </ul>
+         <h4> Solution: </h4>
+         <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, tenetur placeat odit porro aperiam, quod sint voluptatibus molestias fugit alias quia cumque debitis consequatur. Facere neque quam repellat vero commodi!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odit sint sapiente dignissimos nesciunt minima saepe doloremque iure voluptatibus dolore sit corrupti iste, facere rem aut ducimus deleniti eveniet voluptas.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam distinctio earum maiores autem, voluptate eligendi magnam dignissimos ex beatae cumque hic fugit eveniet, consequatur, animi quisquam vel magni necessitatibus.</li>
+         </ul>
+          
       </div>
 
     </div>
     <div class="card">
-      <h3>Project 4</h3>
-      <img src="github.png" alt="A screenshot of my fourth project">
-      <div class="projects__previewButtons">
+      <div class="project__leftside">
+        <h3>Project 1</h3>
+        <img src="github.png" alt="A screenshot of my fourth project">
+        
+        <div class="projects__previewButtons">
         <button>Github Repo</button>
         <button>Live Preview</button>
+        </div>
+     
+
+        <h4>Technologies Used:</h4>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Javascript</li>
+          <li>ReactJS</li>
+          <li>NodeJS</li>
+          <li>ExpressJS</li>
+        </ul>
+
       </div>
-      <p>Technologies Used:</p>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Javascript</li>
-        <li>ReactJS</li>
-        <li>NodeJS</li>
-        <li>ExpressJS</li>
-      </ul>  
+
       <div class="card__info">
-         <p>Aim of project: </p>
-        <ul> 
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </ul>
-         <p>Diffulculties I faced: </p>
+         <h4> Aim of project: </h4>
+         <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, tenetur placeat odit porro aperiam, quod sint voluptatibus molestias fugit alias quia cumque debitis consequatur. Facere neque quam repellat vero commodi!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odit sint sapiente dignissimos nesciunt minima saepe doloremque iure voluptatibus dolore sit corrupti iste, facere rem aut ducimus deleniti eveniet voluptas.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam distinctio earum maiores autem, voluptate eligendi magnam dignissimos ex beatae cumque hic fugit eveniet, consequatur, animi quisquam vel magni necessitatibus.</li>
+         </ul>
+         <h4> Diffulculties I faced: </h4>
+         <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, tenetur placeat odit porro aperiam, quod sint voluptatibus molestias fugit alias quia cumque debitis consequatur. Facere neque quam repellat vero commodi!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odit sint sapiente dignissimos nesciunt minima saepe doloremque iure voluptatibus dolore sit corrupti iste, facere rem aut ducimus deleniti eveniet voluptas.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam distinctio earum maiores autem, voluptate eligendi magnam dignissimos ex beatae cumque hic fugit eveniet, consequatur, animi quisquam vel magni necessitatibus.</li>
+         </ul>
+         <h4> Solution: </h4>
+         <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, tenetur placeat odit porro aperiam, quod sint voluptatibus molestias fugit alias quia cumque debitis consequatur. Facere neque quam repellat vero commodi!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odit sint sapiente dignissimos nesciunt minima saepe doloremque iure voluptatibus dolore sit corrupti iste, facere rem aut ducimus deleniti eveniet voluptas.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam distinctio earum maiores autem, voluptate eligendi magnam dignissimos ex beatae cumque hic fugit eveniet, consequatur, animi quisquam vel magni necessitatibus.</li>
+         </ul>
+          
+      </div>
+
+    </div>
+    <div class="card">
+      <div class="project__leftside">
+        <h3>Project 1</h3>
+        <img src="github.png" alt="A screenshot of my fourth project">
+        
+        <div class="projects__previewButtons">
+        <button>Github Repo</button>
+        <button>Live Preview</button>
+        </div>
+     
+
+        <h4>Technologies Used:</h4>
         <ul>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Javascript</li>
+          <li>ReactJS</li>
+          <li>NodeJS</li>
+          <li>ExpressJS</li>
         </ul>
-         <p>Solutions: </p>
-        <ul>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam excepturi adipisci itaque deleniti.</li>
-        </ul>   
+
+      </div>
+
+      <div class="card__info">
+         <h4> Aim of project: </h4>
+         <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, tenetur placeat odit porro aperiam, quod sint voluptatibus molestias fugit alias quia cumque debitis consequatur. Facere neque quam repellat vero commodi!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odit sint sapiente dignissimos nesciunt minima saepe doloremque iure voluptatibus dolore sit corrupti iste, facere rem aut ducimus deleniti eveniet voluptas.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam distinctio earum maiores autem, voluptate eligendi magnam dignissimos ex beatae cumque hic fugit eveniet, consequatur, animi quisquam vel magni necessitatibus.</li>
+         </ul>
+         <h4> Diffulculties I faced: </h4>
+         <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, tenetur placeat odit porro aperiam, quod sint voluptatibus molestias fugit alias quia cumque debitis consequatur. Facere neque quam repellat vero commodi!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odit sint sapiente dignissimos nesciunt minima saepe doloremque iure voluptatibus dolore sit corrupti iste, facere rem aut ducimus deleniti eveniet voluptas.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam distinctio earum maiores autem, voluptate eligendi magnam dignissimos ex beatae cumque hic fugit eveniet, consequatur, animi quisquam vel magni necessitatibus.</li>
+         </ul>
+         <h4> Solution: </h4>
+         <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, tenetur placeat odit porro aperiam, quod sint voluptatibus molestias fugit alias quia cumque debitis consequatur. Facere neque quam repellat vero commodi!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odit sint sapiente dignissimos nesciunt minima saepe doloremque iure voluptatibus dolore sit corrupti iste, facere rem aut ducimus deleniti eveniet voluptas.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam distinctio earum maiores autem, voluptate eligendi magnam dignissimos ex beatae cumque hic fugit eveniet, consequatur, animi quisquam vel magni necessitatibus.</li>
+         </ul>
+          
       </div>
 
     </div>
 
-
-
-    
   </div>
 
 </section>
