@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  
   
 
   <title>Document</title>
@@ -15,29 +15,31 @@
   
 <header>
   <nav class="navbar">
+    
 
-      <a href="#introPage" id="myLogo">My Logo </a>
+      <!-- <a href="#introduction-section" id="mylogo">My Logo</a> -->
+      
+      <div class="hexlogo"></div>
+  
 
-      <div class="switch">
-        <div class="flicker"></div>
+      <div class="toggle">
+        <div class="toggle-button"></div>
       </div>
 
 
       <div class="navbar__links">
-        <a href="#aboutMeSection" class="navbar__link navbar__link--active" id="aboutme">About Me</a>
-        <a href="#" class="navbar__link navbar__link">Technologies</a>
-        <a href="#myProjects" class="navbar__link navbar__link">Projects</a>
-        <a href="#contactDetails" class="navbar__link navbar__link">Contact</a>
+         <a href="#aboutme-section" class="navbar__links" id="aboutme">About Me</a>
+         <a href="#projects-section" class="navbar__links">Projects</a>
+         <a href="" class="navbar__links">Technologies</a>
+         <a href="#contact-section" class="navbar__links">Contact</a>
+         <a href="" class="navbar__links navbar__links--resume">Resume</a>
       </div> 
       
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+      <div class="hamburger__menu">
+        <div class="hamburger__menu hamburger__menu--bar1"></div>
+        <div class="hamburger__menu hamburger__menu--bar2"></div>
+        <div class="hamburger__menu hamburger__menu--bar3"></div>
       </div>
-   
-  
-
 
   </nav>
 </header>
@@ -47,41 +49,109 @@
 
 <main class="maincontent">
 
-<section class="introduction" id="introPage">
-   
+<section id="introduction-section">
 
-    <h1 class="introduction__opening"><span>Hi, my name is</span>
-      <span class="introduction__span introduction__span--name">Monique Christopher</span>
-      <span class="introduction__span introduction__span--tagline" id="tagline-typer">I create new technical solutions.</span> 
-    </h1>
+  <div class="introduction__info">
+    <span class ="introduction__info introduction__info--opening">Hi, my name is </span>
+    <span class ="introduction__info introduction__info--name">Monique Christopher</span>
+    <span class ="introduction__info introduction__info--tagline" id="tagline-typer">I create new technical solutions.</span> 
+  </div>
+
+
+  <div class="chevron-container">
+    <div class="chevron"></div>
+    <div class="chevron"></div>
+    <div class="chevron"></div>
+  </div>
+
+
 
 </section>
 
 
 
-<section class="aboutMe" id="aboutMeSection">
+<section id="aboutme-section">
  
-  <div class="aboutMe__container">
+  <div class="aboutme__container">
     <h2>About Me</h2>
+    <hr>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, rerum ab saepe natus excepturi ratione commodi sapiente nam accusamus? Vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
   </div>
 
+  <div class="chevron-containertwo">
+    <div class="chevron-two"></div>
+    <div class="chevron-two"></div>
+    <div class="chevron-two"></div>
+  </div>
+
 
 </section>
 
 
 
-<section class="projects" id="myProjects">
+<section id="projects-section" id="myProjects">
 
-  <h2 class="projects__header">Projects</h2>
+   <div class="container">
+      <h2 class="headline-center">My Projects</h2>
+      <hr class="center">
+   </div>
 
-  
-  <div class="projects__container">
 
-    <div class="card">
+   <div class="projects__wrapper">
+      <ul>
+        <li class="menuitem active" id="ads" >Google Ads Management</li>
+        <li class="menuitem" id="remarketing">Remarketing</li>
+        <li class="menuitem" id="ecommerce">Ecommerce</li>
+        <li class="menuitem" id="hub">Hub</li>
+      </ul>
+
+       
+      <div class="item" id="project-ads">
+        <img src="./github.png" alt="">
+        <img src="./github.png" alt="">
+        <img src="./github.png" alt="">
+        <img src="./github.png" alt="">
+        <img src="./github.png" alt="">
+        <img src="./github.png" alt="">
+      </div>
+
+      <div class="item" id="project-remarketing">
+        <img src="./linkedin.png" alt="">
+        <img src="./linkedin.png"alt="">
+        <img src="./linkedin.png" alt="">
+        <img src="./linkedin.png" alt="">
+        <img src="./linkedin.png" alt="">
+        <img src="./linkedin.png" alt="">
+      </div>
+
+      <div class="item" id="project-ecommerce">
+        <img src="./twitter.png" alt="">
+        <img src="./twitter.png" alt="">
+        <img src="./twitter.png" alt="">
+        <img src="./twitter.png" alt="">
+        <img src="./twitter.png" alt="">
+        <img src="./twitter.png" alt="">
+      </div>
+
+      <div class="item" id="project-hub">
+        <img src="./instagram.png" alt="">
+        <img src="./instagram.png" alt="">
+        <img src="./instagram.png" alt="">
+        <img src="./instagram.png" alt="">
+        <img src="./instagram.png" alt="">
+        <img src="./instagram.png" alt="">
+      </div>
+
+    </div>
+
+
+</section>
+
+
+    <!-- <div class="card">
       <div class="project__leftside">
         <h3>Project 1</h3>
-        <img src="github.png" alt="A screenshot of my fourth project">
+
         
         <div class="projects__previewButtons">
         <button>Github Repo</button>
@@ -263,7 +333,7 @@
 
     </div>
 
-  </div>
+  </div> -->
 
 </section>
 
@@ -271,7 +341,7 @@
 
 </main>
 
-
+<script src="script.js" ></script>
 </body>
 </html>
 
