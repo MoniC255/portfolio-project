@@ -66,6 +66,7 @@ body {
   transition: text-decoration-color 500ms;
   transition: text-decoration-color 500ms, -webkit-text-decoration-color 500ms;
   color: var(--main-text-color);
+  font-size: 1.2rem;
 }
 
 .navbar .navbar__links:hover {
@@ -81,7 +82,7 @@ body {
 .navbar .navbar__links--resume {
   padding: 0.75em 1em;
   margin: 20px;
-  font-size: 15px;
+  font-size: 1.2rem;
   color: var(--alternative-text-color);
   background-color: transparent;
   border: 1px solid var(--alternative-text-color);
@@ -149,7 +150,7 @@ body {
 }
 
 #introduction-section .introduction__info--name {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 600;
   color: yellow;
 }
@@ -324,6 +325,7 @@ body {
   font-size: 1.5rem;
   text-align: center;
   color: var(--main-text-color);
+  font-weight: 800;
 }
 
 #aboutme-section .chevron-containerTwo {

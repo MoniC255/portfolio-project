@@ -54,13 +54,13 @@ function clickChevronScroll () {
    chevronScroll.forEach((chevron) => {
 
       chevron.addEventListener('click', () => {
-         window.scrollTo({ top: 775, behavior: 'smooth' })       
+         window.scrollTo({ top: 969, behavior: 'smooth' })       
       })
    })
 
    chevronScrollTwo.forEach((chevronTwo) => {
       chevronTwo.addEventListener('click', () => {
-         window.scrollTo({ top: 1550, behavior: 'smooth' })   
+         window.scrollTo({ top: 1950, behavior: 'smooth' })   
       })
    })
 }
