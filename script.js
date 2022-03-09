@@ -8,21 +8,39 @@ let projectTitles = document.querySelectorAll('.menuitem')
 let projectImages = document.querySelectorAll('.item');
 
 
+clickNavLink();
+
+function clickNavLink () {
+navLinks.forEach((navLink) => {
+
+   navLink.addEventListener('click', (event) => {
+
+      let currentLink = document.getElementsByClassName('active-link')
+     
+       if (currentLink.length > 0) {
+         currentLink[0].classList.remove('active-link');
+       }
+       event.target.classList.add('active-link');
+      })  
+     
+   })
+
+}
 
 
+clickBurgerMenu();
 
-pressBurgerMenu();
-
-function pressBurgerMenu () {
+function clickBurgerMenu () {
 
    burgerMenu.addEventListener('click', () => {
       nav.classList.toggle('active-nav')
    })
 }
 
-pressToggleButton();
 
-function pressToggleButton () {
+clickToggleButton();
+
+function clickToggleButton () {
 
    toggleButton.addEventListener('click', () => {
       document.body.classList.toggle('changeColour')
@@ -30,9 +48,9 @@ function pressToggleButton () {
 }
 
 
-pressChevronScroll();
+clickChevronScroll();
 
-function pressChevronScroll () {
+function clickChevronScroll () {
    chevronScroll.forEach((chevron) => {
 
       chevron.addEventListener('click', () => {
@@ -47,51 +65,36 @@ function pressChevronScroll () {
    })
 }
 
+clickProjectTitle();
 
+function clickProjectTitle () {
 
+   projectTitles.forEach((title) => {
 
- projectTitles.forEach((title) => {
+      title.addEventListener('click', (event) => {
 
-
-   title.addEventListener('click', (event) => {
-      
-      let current = document.getElementsByClassName('active')
-
-       if (current.length > 0) {
-         current[0].classList.remove('active');
+         let currentTitle = document.getElementsByClassName('active')
+         console.log(currentTitle)
+     
+         if (currentTitle.length > 0) {
+         currentTitle[0].classList.remove('active');
        }
        event.target.classList.add('active'); 
-
-       showImages();
-
-
-
-       
-
-     }) 
-
-   
+        
+       showProjectImages();
+     })  
+    
 })
 
+}
 
 
-
-function showImages () {
+function showProjectImages () {
 projectImages.forEach((image) => {
-
-   let titleId = event.target.id
-  
+   let titleId = event.target.id 
    let projectShowImages = `project-${titleId}`
-
-   image.id === projectShowImages ? image.style.display = 'inline-block': image.style.display = 'none'
-
-
-
-
-
-
+   image.id === projectShowImages ? image.style.display = 'block': image.style.display = 'none'
 
 })
 }
 
-//i want to hover over project title and have the corresponding pictures show only
