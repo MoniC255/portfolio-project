@@ -74,7 +74,7 @@ function clickProjectTitle () {
       title.addEventListener('click', (event) => {
 
          let currentTitle = document.getElementsByClassName('active')
-         console.log(currentTitle)
+        
      
          if (currentTitle.length > 0) {
          currentTitle[0].classList.remove('active');
